@@ -35,7 +35,7 @@ public class Json {
         
         //Json
         GestionFichero gf1 = new GestionFichero(false);
-        gf1.escribirFicheroJson(alumnos);
+        gf1.leerFicheroJson();
       
         
         

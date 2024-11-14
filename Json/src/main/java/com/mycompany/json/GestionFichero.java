@@ -120,9 +120,30 @@ public class GestionFichero {
             mapper.writeValue(FICHERO_ALUMNOS_JSON, alumnos);
             System.out.println("Archivo JSON llenado con éxito.");
         } catch (IOException e) {
-            System.out.println("Error al escribir archivo Json" + e.getMessage());
+            System.out.println("Error al escribir archivo Json" + e.getMessage());  
         }
 
+    }
+    
+    public List<Alumno> leerFicheroJson(){
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.registerModule(new JavaTimeModule()); //Soporte para LocalDate 
+        mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS); //Para manerjar formato ISo de fechas
+        
+        List<Alumno> alumnos = null;
+        
+        try{
+            alumnos = mapper.readValue(FICHERO_ALUMNOS_JSON, 
+                    mapper.getTypeFactory().constructCollectionType(List.class, Alumno.class));
+            System.out.println("Alumnos leidos con éxito");
+            for(Alumno alumno : alumnos){
+                System.out.println(alumno.toString());
+            }
+        }catch(IOException e){
+            System.out.println("Error al leer el archivo JSON."+e.getMessage());
+        }
+        
+        return alumnos;
     }
 
 }

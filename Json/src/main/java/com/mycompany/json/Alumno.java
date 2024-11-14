@@ -40,6 +40,14 @@ public class Alumno implements Serializable{
         this.curso = curso;
         this.grupo = grupo;
     }
+    public Alumno(){}
+
+    @Override
+    public String toString() {
+        return "Alumno{" + "nia=" + nia + ", nombre=" + nombre + ", apellidos=" + apellidos + ", genero=" + genero + ", fechaNacimiento=" + fechaNacimiento + ", ciclo=" + ciclo + ", curso=" + curso + ", grupo=" + grupo + '}';
+    }
+    
+    
     
     
 }
