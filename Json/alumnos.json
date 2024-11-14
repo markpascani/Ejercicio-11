@@ -1,0 +1,37 @@
+[ {
+  "nia" : 1,
+  "nombre" : "Mihai",
+  "apellidos" : "Stinga",
+  "genero" : "H",
+  "fechaNacimiento" : "2000-01-12",
+  "ciclo" : "DAM",
+  "curso" : "2",
+  "grupo" : "B"
+}, {
+  "nia" : 2,
+  "nombre" : "Mihai2",
+  "apellidos" : "Stinga2",
+  "genero" : "H",
+  "fechaNacimiento" : "2000-07-12",
+  "ciclo" : "DAM",
+  "curso" : "2",
+  "grupo" : "B"
+}, {
+  "nia" : 3,
+  "nombre" : "Mihai3",
+  "apellidos" : "Stinga3",
+  "genero" : "H",
+  "fechaNacimiento" : "2000-06-12",
+  "ciclo" : "DAM",
+  "curso" : "2",
+  "grupo" : "A"
+}, {
+  "nia" : 4,
+  "nombre" : "Mihai4",
+  "apellidos" : "Stinga4",
+  "genero" : "H",
+  "fechaNacimiento" : "2000-05-12",
+  "ciclo" : "DAM",
+  "curso" : "2",
+  "grupo" : "A"
+} ]
